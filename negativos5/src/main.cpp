@@ -6,7 +6,17 @@ const int SIZE = 5; // input size.
 
 int main(void)
 {
-    // TODO: Adicione aqui seu código.
+    int n, i=0, contador=0;
 
-    return 0;
+	while(i<5){
+		cin>>n;
+
+		if(n<0){
+			contador++;
+		}
+
+		i++;
+	}
+	cout<<contador<<endl;
+	return 0;
 }
