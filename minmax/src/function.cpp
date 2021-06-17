@@ -13,7 +13,33 @@
 std::pair<int,int> min_max( int V[], size_t n )
 {
     // TODO: Adicione aqui sua solução.
+    int count=0;
 
+	pair<int, int> min_max;
+	pair<int, int> indices;
+
+	cin>>V[0];
+	min_max.first = V[0];
+	min_max.second = V[0];
+	indices.first = count;
+	indices.second = count;
+	count++;
+	while(count<n){
+		cin>>vetor[count];
+
+		if(vetor[count]<min_max.first){
+			min_max.first = V[count];
+			indices.first = count;
+		}
+
+		if(vetor[count]>=min_max.second){
+			min_max.second = V[count];
+			indices.second = count;
+		}
+		count++;
+	}
+
+	//cout<<indices.first<<", "<<indices.second<<endl;
     // TODO: Isso é apenas um STUB. Substitua com seu retorno correto.
-    return { -1, -1 };
+    return { indices.first, indices.second };
 }
