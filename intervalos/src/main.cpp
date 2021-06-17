@@ -15,7 +15,39 @@ using std::setprecision;
 
 int main(void)
 {
-    // TODO: Adicione aqui a sua solução.
+    int n, total=0;
+	int intervaloUm=0, intervaloDois=0, intervaloTres=0, intervaloQuatro=0, intervaloFora=0;
 
+	while(cin>>std::ws>>n){
+		if(n>=0 && n<25){
+			intervaloUm++;
+			total++;
+		}else if(n>=25 && n<50){
+			intervaloDois++;
+			total++;
+		}else if(n>=50 && n<75){
+			intervaloTres++;
+			total++;
+		}else if(n>=75 && n<100){
+			intervaloQuatro++;
+			total++;
+		}else{
+			intervaloFora++;
+			total++;
+		}
+	}
+
+	float percentUm = float(intervaloUm/total)*100;
+	float percentDois = float(intervaloDois/total)*100;
+	float percentTres = float(intervaloTres/total)*100;
+	float percentQuatro = float(intervaloQuatro/total)*100;
+	float percentFora = float(intervaloFora/total)*100;
+
+	cout<<percentUm<<endl;
+	cout<<percentDois<<endl;
+	cout<<percentTres<<endl;
+	cout<<percentQuatro<<endl;
+	cout<<percentFora<<endl;
+}
     return 0;
 }
