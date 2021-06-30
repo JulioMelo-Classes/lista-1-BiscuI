@@ -13,6 +13,9 @@ using std::setprecision;
 
 // Se desejar, crie funções aqui, antes do main().
 
+/*
+vou considerar 60% se voce corrigir os erros de typecasting e os erros na impressão deve funcionar
+*/
 int main(void)
 {
     int n, total=0;
@@ -37,7 +40,8 @@ int main(void)
 		}
 	}
 
-	float percentUm = float(intervaloUm/total)*100;
+	//float percentUm = float(intervaloUm/total)*100; //o typecasting não se faz assim, a sintaxe é (float) expressao
+	float percentUm = (float)intervaloUm/total*100;
 	float percentDois = float(intervaloDois/total)*100;
 	float percentTres = float(intervaloTres/total)*100;
 	float percentQuatro = float(intervaloQuatro/total)*100;
@@ -48,6 +52,5 @@ int main(void)
 	cout<<percentTres<<endl;
 	cout<<percentQuatro<<endl;
 	cout<<percentFora<<endl;
-}
     return 0;
 }

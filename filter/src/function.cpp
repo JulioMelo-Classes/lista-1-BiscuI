@@ -12,8 +12,9 @@
  * @param last Pointer just past the last valid value of the range we want to filter.
  * @return a pointer to the new 'logical' end of the array.
  */
-int * filter( int * first, int * last )
-{/*! 
+//int * filter( int * first, int * last )
+
+/*! 
  * Remove negative and zero values from an array, preserving the
  * relative order of the original values that will remain in the
  * resulting array.
@@ -27,6 +28,7 @@ int * filter( int * first, int * last )
  * @param last Pointer just past the last valid value of the range we want to filter.
  * @return a pointer to the new 'logical' end of the array.
  */
+ /*erros de compilação, não vou considerar*/
 int * filter( int * first, int * last )
 {
     while(first != last){
@@ -43,7 +45,7 @@ int * filter( int * first, int * last )
     }
 
     return first;
-}
 
-    return nullptr;
+
+//    return nullptr;
 }

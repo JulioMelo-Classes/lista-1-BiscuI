@@ -1,5 +1,8 @@
 #include "function.h"
 
+/*
+80%, faltou o caso em que o vetor deve ser vazio
+*/
 std::vector<unsigned int> fib_below_n( unsigned int n )
 {
     // TODO: adicione o seu código aqui.
@@ -16,7 +19,7 @@ std::vector<unsigned int> fib_below_n( unsigned int n )
 		numPenultimo = vetor[vetor.size() - 2];
 		proxTermo = numAnterior + numPenultimo;
 	}
-    }
+    //}
     // TODO: Isto é apenas um STUB. Troque o retorno pelo que você julgar correto.
     return vetor;
 }

@@ -3,6 +3,11 @@ using std::cin;
 using std::cout;
 using std::endl;
 
+/*
+a lógica funciona apenas para quando n é n>0, além disso vc não processa a entrada inteira
+vou considerar 50%
+*/
+
 int main(){
     int m, n, soma=0;
     cin>>m;

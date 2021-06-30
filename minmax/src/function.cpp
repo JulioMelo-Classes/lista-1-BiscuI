@@ -9,8 +9,10 @@
  *
  * @return A pair of indexes to the first smallest and last largest values.
  */
-
-std::pair<int,int> min_max( int V[], size_t n )
+/*
+como tem muitos erros de compilação e alguns erros conceituais não vou considerar
+*/
+std::pair<int,int> min_max( int V[], std::size_t n )
 {
     // TODO: Adicione aqui sua solução.
     int count=0;
@@ -18,14 +20,14 @@ std::pair<int,int> min_max( int V[], size_t n )
 	pair<int, int> min_max;
 	pair<int, int> indices;
 
-	cin>>V[0];
+	//cin>>V[0]; //não entendi pq vc usou cin aqui
 	min_max.first = V[0];
 	min_max.second = V[0];
 	indices.first = count;
 	indices.second = count;
 	count++;
-	while(count<n){
-		cin>>vetor[count];
+	while(count<n){ 
+		//cin>>vetor[count]; //não era essa a ideia...
 
 		if(vetor[count]<min_max.first){
 			min_max.first = V[count];
